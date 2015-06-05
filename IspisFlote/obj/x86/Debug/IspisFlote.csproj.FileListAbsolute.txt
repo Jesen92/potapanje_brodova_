@@ -1,8 +1,7 @@
-C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.exe
-C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.pdb
-C:\OOMwc\IspisFlote\bin\Debug\PotapanjeBrodova.dll
-C:\OOMwc\IspisFlote\bin\Debug\PotapanjeBrodova.pdb
-C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.csprojResolveAssemblyReference.cache
-C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.exe
-C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.pdb
-C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.exe.config
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\bin\Debug\IspisFlote.exe
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\bin\Debug\IspisFlote.pdb
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\bin\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\bin\Debug\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.csprojResolveAssemblyReference.cache
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.exe
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.pdb

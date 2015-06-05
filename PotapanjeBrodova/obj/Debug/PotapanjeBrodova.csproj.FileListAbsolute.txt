@@ -1,5 +1,5 @@
-C:\OOMwc\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.dll
-C:\OOMwc\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.pdb
-C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.dll
-C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.pdb
-C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.csprojResolveAssemblyReference.cache
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.csprojResolveAssemblyReference.cache
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.pdb

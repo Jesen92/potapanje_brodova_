@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sucelje", "Sucelje\Sucelje.csproj", "{B834F110-4CFC-46CC-B656-2C087BD5112C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotapanjeBrodova", "..\konzolno_potapanje\PotapanjeBrodova\PotapanjeBrodova.csproj", "{CA0D14F7-4DEC-44B9-97E9-E9F12DA1B8F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotapanjeBrodova", "PotapanjeBrodova\PotapanjeBrodova.csproj", "{CA0D14F7-4DEC-44B9-97E9-E9F12DA1B8F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IspisFlote", "..\konzolno_potapanje\IspisFlote\IspisFlote.csproj", "{1069E6B8-D421-4C5A-B695-B687CBB77C9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IspisFlote", "IspisFlote\IspisFlote.csproj", "{1069E6B8-D421-4C5A-B695-B687CBB77C9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

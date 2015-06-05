@@ -122,11 +122,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\konzolno_potapanje\IspisFlote\IspisFlote.csproj">
+    <ProjectReference Include="..\IspisFlote\IspisFlote.csproj">
       <Project>{1069e6b8-d421-4c5a-b695-b687cbb77c9a}</Project>
       <Name>IspisFlote</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\konzolno_potapanje\PotapanjeBrodova\PotapanjeBrodova.csproj">
+    <ProjectReference Include="..\PotapanjeBrodova\PotapanjeBrodova.csproj">
       <Project>{ca0d14f7-4dec-44b9-97e9-e9f12da1b8f2}</Project>
       <Name>PotapanjeBrodova</Name>
     </ProjectReference>
