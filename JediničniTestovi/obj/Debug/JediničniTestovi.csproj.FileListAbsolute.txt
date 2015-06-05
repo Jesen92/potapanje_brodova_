@@ -1,0 +1,7 @@
+C:\OOMwc\JediničniTestovi\bin\Debug\JediničniTestovi.dll
+C:\OOMwc\JediničniTestovi\bin\Debug\JediničniTestovi.pdb
+C:\OOMwc\JediničniTestovi\bin\Debug\PotapanjeBrodova.dll
+C:\OOMwc\JediničniTestovi\bin\Debug\PotapanjeBrodova.pdb
+C:\OOMwc\JediničniTestovi\obj\Debug\JediničniTestovi.csprojResolveAssemblyReference.cache
+C:\OOMwc\JediničniTestovi\obj\Debug\JediničniTestovi.dll
+C:\OOMwc\JediničniTestovi\obj\Debug\JediničniTestovi.pdb

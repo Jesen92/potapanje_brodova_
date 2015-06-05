@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace PotapanjeBrodova
+{
+    public class MrežaZaEvidenciju
+    {
+        public MrežaZaEvidenciju(int redaka, int stupaca)
+        {
+            m_redaka = redaka;
+            m_stupaca = stupaca;
+            m_polja = new PoljeZaEvidenciju[redaka, stupaca];
+            for (int r = 0; r < redaka; ++r)
+            {
+                for (int s = 0; s < stupaca; ++s)
+                    m_polja[r, s] = new PoljeZaEvidenciju(r, s);
+            }
+        }
+
+        public List<PoljeZaEvidenciju> DajSlobodnaPolja(int duljina)
+        {
+            List<PoljeZaEvidenciju> polja = new List<PoljeZaEvidenciju>();
+            polja.AddRange(DajHorizontalnaPolja(duljina));
+            polja.AddRange(DajVertikalnaPolja(duljina));
+            return polja;
+        }
+
+        public void ZabilježiPromašaj(int redak, int stupac)
+        {
+            if (JeLiPoljeUMreži(redak, stupac))
+                m_polja[redak, stupac].PromijeniStanje(StanjePolja.Promašeno);
+        }
+
+        public void ZabilježiPogodak(int redak, int stupac)
+        {
+            m_polja[redak, stupac].PromijeniStanje(StanjePolja.Pogođeno);
+            ZabilježiPromašaj(redak - 1, stupac - 1);
+            ZabilježiPromašaj(redak - 1, stupac + 1);
+            ZabilježiPromašaj(redak + 1, stupac - 1);
+            ZabilježiPromašaj(redak + 1, stupac + 1);
+        }
+
+        public void ZabilježiPotonuće(PoljeZaBrod[] polja)
+        {
+            PoljeZaBrod prvo = polja[0];
+            PoljeZaBrod zadnje = polja[polja.Length - 1];
+            int r1 = prvo.Redak - 1;
+            int r2 = zadnje.Redak + 2;
+            int s1 = prvo.Stupac - 1;
+            int s2 = zadnje.Stupac + 2;
+            for (int r = r1; r < r2; ++r)
+            {
+                for (int s = s1; s < s2; ++s)
+                    ZabilježiPromašaj(r, s);
+            }
+            // za godinu dana: ovo smo napravili kolegi Čoviću za inat
+            foreach (var p in polja)
+                m_polja[p.Redak, p.Stupac].PromijeniStanje(StanjePolja.Potopljeno);
+        }
+
+        private bool JeLiPoljeUMreži(int redak, int stupac)
+        {
+            return redak >= 0 && redak < m_redaka && stupac >= 0 && stupac < m_stupaca;
+        }
+
+        delegate PoljeZaEvidenciju Dohvat(int i, int j);
+
+        private List<PoljeZaEvidenciju> DajHorizontalnaPolja(int duljina)
+        {
+            return DajPolja(duljina, m_redaka, m_stupaca, (int i, int j) => m_polja[i, j]);
+        }
+
+        private List<PoljeZaEvidenciju> DajVertikalnaPolja(int duljina)
+        {
+            return DajPolja(duljina, m_stupaca, m_redaka, (int i, int j) => m_polja[j, i]);
+        }
+
+        private List<PoljeZaEvidenciju> DajPolja(int duljina, int vanjska, int unutarnja, Dohvat dohvat)
+        {
+            List<PoljeZaEvidenciju> polja = new List<PoljeZaEvidenciju>();
+            for (int i = 0; i < vanjska; ++i)
+            {
+                int slobodnihPolja = 0;
+                for (int j = 0; j < unutarnja; ++j)
+                {
+                    if (dohvat(i, j).StanjePolja == StanjePolja.Netaknuto)
+                    {
+                        ++slobodnihPolja;
+                        if (slobodnihPolja >= duljina)
+                        {
+                            for (int k = j - duljina + 1; k <= j; ++k)
+                                polja.Add(dohvat(k, i));
+                        }
+                    }
+                    else
+                        slobodnihPolja = 0;
+                }
+            }
+            return polja;
+        }
+
+
+        private PoljeZaEvidenciju[,] m_polja;
+        private int m_redaka;
+        private int m_stupaca;
+    }
+}

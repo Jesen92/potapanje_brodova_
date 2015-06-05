@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using PotapanjeBrodova;
+using System.Diagnostics;
+
+namespace KonzolnaIgra
+{
+    class Program
+    {
+        static RezultatGađanja UnesiRezultatGađanja()
+        {
+            do
+            {
+                string odgovor = Console.ReadLine().Trim();
+                char rez = odgovor[0];
+                switch (rez)
+                {
+                    case 'f':
+                    case '-':
+                    case 'm':
+                        return RezultatGađanja.Promašaj;
+                    case 'p':
+                    case '+':
+                    case 'h':
+                        return RezultatGađanja.Pogodak;
+                    case 't':
+                    case '*':
+                    case 's':
+                        return RezultatGađanja.Potopljen;
+                    default:
+                        Console.WriteLine("Neispravan unos, pokušaj ponovo!");
+                        break;
+                }
+            } while (true);
+        }
+
+        static PoljeZaBrod UnesiGađanje()
+        {
+            do
+            {
+                Console.Write("Ti gađaš: ");
+                string unos = Console.ReadLine();
+                string[] koord = unos.Split('-');
+                int stupac = (koord[0].Trim().ToUpper()[0] - 'A');
+                int redak = int.Parse(koord[1]) - 1;
+                if (redak >= 0 && redak < 10 && stupac >= 0 && stupac < 10)
+                    return new PoljeZaBrod(redak, stupac);
+                Console.WriteLine("Pogrešan unos, ponovi! ");
+            } while (true);
+        }
+
+        static void Main(string[] args)
+        {
+            int[] duljineBrodova = new int[] { 5, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
+            Razarač r = new Razarač(10, 10, duljineBrodova);
+            Brodograditelj b = new Brodograditelj(10, 10);
+            Flota f = b.SložiFlotu(duljineBrodova);
+
+            int brojNašihBrodova = duljineBrodova.Length;
+            int brojBrodovaUFloti = duljineBrodova.Length;
+
+            do
+            {
+                PoljeZaBrod p = r.Gađaj();
+                Console.WriteLine("Gađam: {0}", p);
+
+                RezultatGađanja rez = UnesiRezultatGađanja();
+                r.ZabilježiRezultat(rez);
+                if (rez == RezultatGađanja.Potopljen)
+                    --brojNašihBrodova;
+                if (brojNašihBrodova == 0)
+                    break;
+
+                var gađamPolje = UnesiGađanje();
+                var gađanje = f.GađajPolje(gađamPolje.Redak, gađamPolje.Stupac);
+                Console.WriteLine(gađanje);
+                if (gađanje == RezultatGađanja.Potopljen)
+                    --brojBrodovaUFloti;
+
+            } while (brojNašihBrodova > 0 && brojBrodovaUFloti > 0);
+            
+            if (brojNašihBrodova > brojBrodovaUFloti)
+                Console.WriteLine(":P   beeee");
+            else
+                Console.WriteLine(":(   buuuu");
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
+        }
+    }
+}

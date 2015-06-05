@@ -1,0 +1,10 @@
+C:\OOMwc\KonzolnaIgra\bin\Debug\KonzolnaIgra.exe
+C:\OOMwc\KonzolnaIgra\bin\Debug\KonzolnaIgra.pdb
+C:\OOMwc\KonzolnaIgra\bin\Debug\PotapanjeBrodova.dll
+C:\OOMwc\KonzolnaIgra\bin\Debug\PotapanjeBrodova.pdb
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.csprojResolveAssemblyReference.cache
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.exe
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.pdb
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.Properties.Resources.resources
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.sucelje.resources
+C:\OOMwc\KonzolnaIgra\obj\x86\Debug\KonzolnaIgra.csproj.GenerateResource.Cache

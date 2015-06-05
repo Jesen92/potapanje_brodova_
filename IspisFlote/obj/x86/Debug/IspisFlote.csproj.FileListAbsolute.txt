@@ -1,0 +1,8 @@
+C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.exe
+C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.pdb
+C:\OOMwc\IspisFlote\bin\Debug\PotapanjeBrodova.dll
+C:\OOMwc\IspisFlote\bin\Debug\PotapanjeBrodova.pdb
+C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.csprojResolveAssemblyReference.cache
+C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.exe
+C:\OOMwc\IspisFlote\obj\x86\Debug\IspisFlote.pdb
+C:\OOMwc\IspisFlote\bin\Debug\IspisFlote.exe.config

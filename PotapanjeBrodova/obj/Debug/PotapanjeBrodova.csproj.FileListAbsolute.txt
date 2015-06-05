@@ -1,0 +1,5 @@
+C:\OOMwc\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.dll
+C:\OOMwc\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.pdb
+C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.dll
+C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.pdb
+C:\OOMwc\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.csprojResolveAssemblyReference.cache

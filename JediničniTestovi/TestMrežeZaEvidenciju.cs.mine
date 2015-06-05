@@ -1,0 +1,141 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PotapanjeBrodova;
+
+namespace JediničniTestovi
+{
+    /// <summary>
+    /// Summary description for TestMrežeZaEvidenciju
+    /// </summary>
+    [TestClass]
+    public class TestMrežeZaEvidenciju
+    {
+        public TestMrežeZaEvidenciju()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        [TestMethod]
+        public void TestSlobodnihPolja()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(6, 6);
+            Assert.AreEqual(120, me.DajSlobodnaPolja(5).Count);
+
+            Assert.AreEqual(144, me.DajSlobodnaPolja(3).Count);
+        }
+
+        [TestMethod]
+        public void TestSlobodnihPolja2()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 6);
+            Assert.AreEqual(80, me.DajSlobodnaPolja(5).Count);
+
+            Assert.AreEqual(114, me.DajSlobodnaPolja(3).Count);
+        }
+
+        public void TestPromasaja()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPromašaj(2, 3);
+            Assert.AreEqual(48, me.DajSlobodnaPolja(1).Count);
+            me.ZabilježiPromašaj(46, me.DajSlobodnaPolja(1).Count);
+            Assert.AreEqual(46, me.DajSlobodnaPolja(1).Count);
+        }
+
+        public void TestPogotkaUGornjemLijevomUglu() 
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPogodak(0, 0);
+            Assert.AreEqual(46, me.DajSlobodnaPolja(1).Count);
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(0, 0)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(1, 1)));
+        }
+
+        public void TestPogotkaUGornjemDesnomUglu()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPogodak(0, 4);
+            Assert.AreEqual(46, me.DajSlobodnaPolja(1).Count);
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(0, 4)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(1, 3)));
+
+        }
+
+        public void TestPogotkaUDonjemDesnomUglu()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPogodak(4, 4);
+            Assert.AreEqual(46, me.DajSlobodnaPolja(1).Count);
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(4, 4)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(3, 3)));
+
+        }
+
+        public void TestPogotkaUDonjemLijevomUglu()
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPogodak(4, 0);
+            Assert.AreEqual(46, me.DajSlobodnaPolja(1).Count);
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(4, 0)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(3, 1)));
+
+        }
+
+        public void TestPogotkaUSridu() 
+        {
+            MrežaZaEvidenciju me = new MrežaZaEvidenciju(5, 5);
+            me.ZabilježiPogodak(2, 2);
+            Assert.AreEqual(44, me.DajSlobodnaPolja(1).Count);
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(2, 2)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(1, 1)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(3, 1)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(1, 3)));
+            Assert.IsFalse(me.DajSlobodnaPolja(1).Contains(new PoljeZaEvidenciju(3,3)));
+        }
+    }
+}
