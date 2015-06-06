@@ -3,3 +3,7 @@ C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\bin\Debug\PotapanjeB
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.csprojResolveAssemblyReference.cache
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.dll
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\bin\Debug\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\obj\Debug\PotapanjeBrodova.pdb

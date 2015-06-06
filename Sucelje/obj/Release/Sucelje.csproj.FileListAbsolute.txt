@@ -1,0 +1,13 @@
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\Sucelje.exe.config
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\Sucelje.exe
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\Sucelje.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\IspisFlote.exe
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\IspisFlote.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\bin\Release\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.csprojResolveAssemblyReference.cache
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.Form1.resources
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.Properties.Resources.resources
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.csproj.GenerateResource.Cache
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.exe
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\Sucelje\obj\Release\Sucelje.pdb

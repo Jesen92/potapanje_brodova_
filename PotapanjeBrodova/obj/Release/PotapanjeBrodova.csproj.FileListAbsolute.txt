@@ -1,0 +1,4 @@
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\bin\Release\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\bin\Release\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\obj\Release\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\PotapanjeBrodova\obj\Release\PotapanjeBrodova.pdb

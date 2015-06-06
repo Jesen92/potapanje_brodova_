@@ -56,7 +56,7 @@ namespace Sucelje
             b = new Brodograditelj(10, 10, duljineBrodova);
             f = b.SložiFlotu();
 
-
+            this.Text = "Potapanje Brodova";
 
             brojNašihBrodova = duljineBrodova.Length;
             brojBrodovaUFloti = duljineBrodova.Length;
@@ -155,6 +155,9 @@ namespace Sucelje
                             index = char.ToUpper(prvo_polje[0]) - 64;
                             val = (int)Char.GetNumericValue(prvo_polje[2]);
 
+                            if (prvo_polje.Length == 4)
+                                val = 10;
+
                             drugi_x = p.x;
                             drugi_y = p.y;
 
@@ -201,8 +204,6 @@ namespace Sucelje
                                 manji_x = drugi_x;
                                 manji_y = drugi_y;
                             }
-
-
 
 
                             if (draw_ship(m_b))
@@ -329,18 +330,20 @@ namespace Sucelje
                     return false;
                 }
 
+                int temp = (int)Char.GetNumericValue(prvo_polje[2]);
 
-
+                if (prvo_polje.Length == 4)
+                    temp = 10;
 
                 if(m_b.smj == smjer.left)
                     for (int i = duljina_brodova[dulj_br_iter]; i > 0; --i)
                     {
-                        m_b.sva_polja.Add(alpha[index - i] + "-" + prvo_polje[2]);
+                        m_b.sva_polja.Add(alpha[index - i] + "-" + temp);
                     }
                 else if(m_b.smj == smjer.right)
                     for (int i = 0; i < duljina_brodova[dulj_br_iter]; ++i)
                     {
-                        m_b.sva_polja.Add(alpha[index + i - 1] + "-" + prvo_polje[2]);
+                        m_b.sva_polja.Add(alpha[index + i - 1] + "-" + temp);
                     }
 
 
@@ -428,21 +431,6 @@ namespace Sucelje
             return true;
         }
 
-
-        private string koordinate_u_polje(int x, int y)
-        {
-            string naz= "";
-
-            foreach (Polja po in polja) 
-            {
-                if (po.x == x && po.y == y)
-                    naz = po.naziv;
-            }
-
-            return naz;
-        }
-
-
         private void label21_Click(object sender, EventArgs e)
         {
 
@@ -467,7 +455,7 @@ namespace Sucelje
         {
             if (brojNašihBrodova <= 0)
             {
-                MessageBox.Show("GAME OVER!!! YOU SUCK!!!");
+                MessageBox.Show("GAME OVER!!! YOU LOSE!!!");
                 restart();
             }
             else if (brojBrodovaUFloti <= 0)
@@ -533,8 +521,6 @@ namespace Sucelje
             Graphics g = pictureBox1.CreateGraphics();
             Rectangle rect = new Rectangle(coor[0]-30, coor[1]-30, 30, 30);
 
-            bool pogodak = false;
-
             foreach (moji_brodovi mb in brodovi) 
             {
                 foreach (string po in mb.sva_polja) 
@@ -551,7 +537,7 @@ namespace Sucelje
                 }
             }
 
-            g.FillRectangle(new SolidBrush(Color.Green), rect);
+            g.FillRectangle(new SolidBrush(Color.Lime), rect);
 
             return RezultatGađanja.Promašaj;
         }
@@ -570,6 +556,19 @@ namespace Sucelje
             }
 
             return coor;
+        }
+
+        private string koordinate_u_polje(int x, int y)
+        {
+            string naz = "";
+
+            foreach (Polja po in polja)
+            {
+                if (po.x == x && po.y == y)
+                    naz = po.naziv;
+            }
+
+            return naz;
         }
     }  
 }

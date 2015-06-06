@@ -5,3 +5,10 @@ C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\bin\Debug\PotapanjeBrodova
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.csprojResolveAssemblyReference.cache
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.exe
 C:\Users\Hrvoje\Desktop\konzolno_potapanje\IspisFlote\obj\x86\Debug\IspisFlote.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\bin\Debug\IspisFlote.exe
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\bin\Debug\IspisFlote.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\bin\Debug\PotapanjeBrodova.dll
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\bin\Debug\PotapanjeBrodova.pdb
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\obj\x86\Debug\IspisFlote.csprojResolveAssemblyReference.cache
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\obj\x86\Debug\IspisFlote.exe
+C:\Users\Hrvoje\Desktop\pot_brod_csharp-master\IspisFlote\obj\x86\Debug\IspisFlote.pdb
