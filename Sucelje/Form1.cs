@@ -16,6 +16,9 @@ namespace Sucelje
 {
     public partial class Form1 : Form
     {
+        int score_ti = 0;
+        int score_on = 0;
+
         int index = 0;
         int val = 0;
         int od_x = 0;
@@ -569,6 +572,12 @@ namespace Sucelje
             }
 
             return naz;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure?","Restart",MessageBoxButtons.YesNo, MessageBoxIcon.Question,MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+                restart();
         }
     }  
 }

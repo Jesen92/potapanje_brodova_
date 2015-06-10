@@ -69,6 +69,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxResult.cs" />
     <Compile Include="moji_brodovi.cs" />
     <Compile Include="Polja.cs" />
     <Compile Include="Program.cs" />

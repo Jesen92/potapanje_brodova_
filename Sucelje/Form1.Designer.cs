@@ -73,6 +73,7 @@
             this.label_dogadanja = new System.Windows.Forms.Label();
             this.ti_score = new System.Windows.Forms.Label();
             this.on_score = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -529,11 +530,23 @@
             this.on_score.Size = new System.Drawing.Size(0, 26);
             this.on_score.TabIndex = 44;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Restart";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 427);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.on_score);
             this.Controls.Add(this.ti_score);
             this.Controls.Add(this.label_dogadanja);
@@ -635,6 +648,7 @@
         private System.Windows.Forms.Label label_dogadanja;
         private System.Windows.Forms.Label ti_score;
         private System.Windows.Forms.Label on_score;
+        private System.Windows.Forms.Button button1;
     }
 }
 
